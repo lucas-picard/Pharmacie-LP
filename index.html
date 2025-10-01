@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Suivi des ordonnances</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="root">
+    <div class="pr">
+      <h1>💊 Suivi des ordonnances</h1>
+
+      <!-- Formulaire -->
+      <form id="ordonnanceForm">
+        <input type="text" id="name" placeholder="Nom du patient" required>
+        <input type="text" id="ordonnance" placeholder="Nom de l'ordonnance" required>
+        <input type="number" id="days" placeholder="Jours restants" min="0" required>
+        <button type="submit">Ajouter</button>
+      </form>
+
+      <!-- Boutons Sauvegarde / Restaurer / Réinitialiser -->
+      <div class="button-group">
+        <button id="saveBtn" class="save-btn">Sauvegarder</button>
+        <input type="file" id="restoreInput" accept=".json" style="display:none">
+        <button id="restoreBtn" class="restore-btn">Restaurer</button>
+        <button id="resetBtn" class="reset-btn">Réinitialiser</button>
+      </div>
+    </div>
+
+    <!-- Tableau -->
+    <table id="ordonnancesTable">
+      <thead>
+        <tr>
+          <th>Nom</th>
+          <th>Ordonnance</th>
+          <th>Échéance</th>
+          <th>Jours restants</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

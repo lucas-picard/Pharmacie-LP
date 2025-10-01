@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom right, #ebf8ff, #dbeafe);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+#root {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  color: #1E3A8A;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.pr{
+  text-align: center;
+  color: #1E3A8A;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: rgb(224, 221, 221);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-shadow: 2px 4px 5px rgb(49, 47, 47);
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr auto;
+  gap: 10px;
+  margin-bottom: 20px;
+ 
+}
+
+form input, form button {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background-color: #1E40AF;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+form button:hover {
+  background-color: #1E3A8A;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #bfdbfe;
+  color: #1E3A8A;
+}
+
+tr:nth-child(even) {
+  background-color: #f3f4f6;
+}
+
+tr:hover {
+  background-color: #e0f2fe;
+}
+
+button.delete-btn {
+  background-color: #dc2626;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+button.delete-btn:hover {
+  background-color: #b91c1c;
+}
+
+.button-group {
+  margin-bottom: 15px;
+}
+
+.button-group button {
+  margin-right: 10px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.button-group .save-btn { background-color: #fbbf24; color: white; }
+.button-group .save-btn:hover { background-color: #f59e0b; }
+.button-group .restore-btn { background-color: #6366f1; color: white; }
+.button-group .restore-btn:hover { background-color: #4f46e5; }
+.button-group .reset-btn { background-color: #9ca3af; color: white; }
+.button-group .reset-btn:hover { background-color: #6b7280; }
